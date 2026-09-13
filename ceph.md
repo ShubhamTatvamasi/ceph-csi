@@ -1,0 +1,21 @@
+# ceph
+
+External Ceph side:
+```
+ceph fsid
+ceph mon dump
+```
+
+Then create a dedicated RBD pool:
+```
+ceph osd pool create kubernetes
+rbd pool init kubernetes
+```
+
+And a restricted CSI user:
+```bash
+ceph auth get-or-create client.csi-rbd \
+  mon 'profile rbd' \
+  osd 'profile rbd pool=kubernetes' \
+  mgr 'profile rbd pool=kubernetes'
+```
