@@ -10,9 +10,13 @@ Get Ceph Monitor Endpoints:
 ceph mon dump
 ```
 
-Then create a dedicated RBD pool:
-```
+Create a new `kubernetes` pool:
+```bash
 ceph osd pool create kubernetes
+```
+
+Initalize `kubernetes` pool as RBD:
+```bash
 rbd pool init kubernetes
 ```
 
