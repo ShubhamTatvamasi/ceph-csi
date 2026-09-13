@@ -20,7 +20,7 @@ Initalize `kubernetes` pool as RBD:
 rbd pool init kubernetes
 ```
 
-And a restricted CSI user:
+Create a new user for CSI:
 ```bash
 ceph auth get-or-create client.csi-rbd \
   mon 'profile rbd' \
