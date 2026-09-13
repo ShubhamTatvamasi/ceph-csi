@@ -5,12 +5,17 @@ Add `ceph-csi` repo:
 helm repo add ceph-csi https://ceph.github.io/csi-charts
 ```
 
+### RBS
+
 Install `ceph-csi-rbd`:
 ```bash
 helm install ceph-csi-rbd ceph-csi/ceph-csi-rbd \
   --namespace ceph-csi \
-  --create-namespace
+  --create-namespace \
+  --set storageClass.create=true
 ```
+
+### CephFS
 
 Install `ceph-csi-cephfs`:
 ```bash
