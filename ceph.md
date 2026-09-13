@@ -1,6 +1,6 @@
 # ceph
 
-External Ceph side:
+Get Ceph cluster details:
 ```
 ceph fsid
 ceph mon dump
