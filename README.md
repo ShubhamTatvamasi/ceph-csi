@@ -21,6 +21,7 @@ helm upgrade -i ceph-csi-rbd ceph-csi/ceph-csi-rbd \
   --set secret.userID="csi-rbd" \
   --set secret.userKey="AgC8JKdqRG0tECAAVh9qDngxobVygcNFbRNVSn/wnP8UAzWLLQ3c+ew52AY=" \
   --set storageClass.create=true \
+  --set storageClass.pool=kubernetes \
   --set storageClass.clusterID="47276ef5-9c84-4d2e-9972-27e533e00e0c" \
   --set-string storageClass.annotations."storageclass\.kubernetes\.io/is-default-class"=true
 ```
