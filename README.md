@@ -13,9 +13,9 @@ helm upgrade -i ceph-csi-rbd ceph-csi/ceph-csi-rbd \
   --namespace ceph-csi \
   --create-namespace \
   --set "csiConfig[0].clusterID=47276ef5-9c84-4d2e-9972-27e533e00e0c" \
-  --set "csiConfig[0].monitors[0]=10.10.10.24:6789" \
-  --set "csiConfig[0].monitors[1]=10.10.10.25:6789" \
-  --set "csiConfig[0].monitors[2]=10.10.10.26:6789" \
+  --set "csiConfig[0].monitors[0]=10.10.153.255:6789" \
+  --set "csiConfig[0].monitors[1]=10.10.169.182:6789" \
+  --set "csiConfig[0].monitors[2]=10.10.204.94:6789" \
   --set provisioner.replicaCount=1 \
   --set secret.create=true \
   --set secret.userID="csi-rbd" \
