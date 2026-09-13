@@ -1,8 +1,12 @@
 # ceph
 
-Get Ceph cluster details:
-```
+Get Ceph cluster ID:
+```bash
 ceph fsid
+```
+
+Get Ceph Monitor Endpoints:
+```bash
 ceph mon dump
 ```
 
