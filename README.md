@@ -10,7 +10,7 @@ helm repo add ceph-csi https://ceph.github.io/csi-charts
 Install `ceph-csi-rbd`:
 ```bash
 helm upgrade -i ceph-csi-rbd ceph-csi/ceph-csi-rbd \
-  --namespace ceph-csi \
+  --namespace ceph-csi-rbd \
   --create-namespace \
   --set "csiConfig[0].clusterID=dc176f2a-a507-11f1-a340-bc241144dae3" \
   --set "csiConfig[0].monitors[0]=10.10.153.255:6789" \
@@ -31,7 +31,8 @@ helm upgrade -i ceph-csi-rbd ceph-csi/ceph-csi-rbd \
 Install `ceph-csi-cephfs`:
 ```bash
 helm upgrade -i ceph-csi-cephfs ceph-csi/ceph-csi-cephfs \
-  --namespace ceph-csi --create-namespace \
+  --namespace ceph-csi-cephfs \
+  --create-namespace \
   --set "csiConfig[0].clusterID=dc176f2a-a507-11f1-a340-bc241144dae3" \
   --set "csiConfig[0].monitors[0]=10.10.153.255:6789" \
   --set "csiConfig[0].monitors[1]=10.10.169.182:6789" \
