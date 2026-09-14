@@ -2,8 +2,7 @@
 
 Create a new `kubernetes-cephfs` pool:
 ```bash
-ceph osd pool create k8s-cephfs-data
-ceph osd pool create k8s-cephfs-metadata
+ceph fs volume create k8s-cephfs
 ```
 
 For CephFS, enable the appropriate application:
