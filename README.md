@@ -19,7 +19,7 @@ helm upgrade -i ceph-csi-rbd ceph-csi/ceph-csi-rbd \
   --set provisioner.replicaCount=1 \
   --set secret.create=true \
   --set secret.userID="csi-rbd" \
-  --set secret.userKey="AgC8JKdqRG0tECAAVh9qDngxobVygcNFbRNVSn/wnP8UAzWLLQ3c+ew52AY=" \
+  --set secret.userKey="AgBVdadqSar3CCAAW9dRV9YxWdZSn3aeGtqI8zlOWgZuR5j1IJL02eNg8bY=" \
   --set storageClass.create=true \
   --set storageClass.pool=kubernetes \
   --set storageClass.clusterID="dc176f2a-a507-11f1-a340-bc241144dae3" \
