@@ -5,6 +5,11 @@ Create a new `k8s-cephfs` pool:
 ceph fs volume create k8s-cephfs
 ```
 
+Check pools:
+```bash
+ceph fs ls
+```
+
 Create a user:
 ```
 ceph auth get-or-create client.k8s-cephfs \
