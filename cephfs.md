@@ -10,6 +10,16 @@ Check pools:
 ceph fs ls
 ```
 
+Create a sub volume group for cephfs:
+```bash
+ceph fs subvolumegroup create k8s-cephfs csi
+```
+
+Verify:
+```bash
+ceph fs subvolumegroup ls k8s-cephfs
+```
+
 Create a user:
 ```
 ceph auth get-or-create client.k8s-cephfs \
