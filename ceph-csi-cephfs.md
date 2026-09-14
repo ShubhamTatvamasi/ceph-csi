@@ -1,4 +1,4 @@
-# CephFS
+# Ceph CSI CephFS
 
 Create a new `k8s-cephfs` pool:
 ```bash
