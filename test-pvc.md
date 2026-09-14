@@ -1,11 +1,11 @@
 # Test PVC
 
-Create postgres with `ceph-csi-rbd` Storage Class:
+Create postgres with `csi-rbd-sc` Storage Class:
 ```bash
 helm upgrade -i postgres \
   oci://registry-1.docker.io/cloudpirates/postgres \
   --set auth.password="postgres" \
-  --set persistence.storageClass=ceph-csi-rbd
+  --set persistence.storageClass=csi-rbd-sc
 ```
 
 Create postgres with `csi-cephfs-sc` Storage Class:
