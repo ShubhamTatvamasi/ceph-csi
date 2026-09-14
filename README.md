@@ -32,7 +32,7 @@ Install `ceph-csi-cephfs`:
 ```bash
 helm upgrade -i ceph-csi-cephfs ceph-csi/ceph-csi-cephfs \
   --namespace ceph-csi --create-namespace \
-  --set csiConfig[0].clusterID=dc176f2a-a507-11f1-a340-bc241144dae3 \
+  --set "csiConfig[0].clusterID=dc176f2a-a507-11f1-a340-bc241144dae3" \
   --set "csiConfig[0].monitors[0]=10.10.153.255:6789" \
   --set "csiConfig[0].monitors[1]=10.10.169.182:6789" \
   --set "csiConfig[0].monitors[2]=10.10.204.94:6789" \
