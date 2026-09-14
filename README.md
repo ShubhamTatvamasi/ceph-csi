@@ -36,6 +36,7 @@ helm upgrade -i ceph-csi-cephfs ceph-csi/ceph-csi-cephfs \
   --set "csiConfig[0].monitors[0]=10.10.153.255:6789" \
   --set "csiConfig[0].monitors[1]=10.10.169.182:6789" \
   --set "csiConfig[0].monitors[2]=10.10.204.94:6789" \
+  --set provisioner.replicaCount=1 \
   --set secret.create=true \
   --set secret.userID=k8s-cephfs \
   --set secret.userKey=AgC/e6dqvlN5CiAAwBog3UUgg0RuGkEX1R3k28T/NatvSi/x1tLj5XjFMQU= \
