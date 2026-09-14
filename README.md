@@ -5,7 +5,7 @@ Add `ceph-csi` repo:
 helm repo add ceph-csi https://ceph.github.io/csi-charts
 ```
 
-### RBS
+### RBD
 
 Install `ceph-csi-rbd`:
 ```bash
