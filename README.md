@@ -40,7 +40,7 @@ helm upgrade -i ceph-csi-cephfs ceph-csi/ceph-csi-cephfs \
   --set provisioner.replicaCount=1 \
   --set secret.create=true \
   --set secret.userID=k8s-cephfs \
-  --set secret.userKey=AgC/e6dqvlN5CiAAwBog3UUgg0RuGkEX1R3k28T/NatvSi/x1tLj5XjFMQU= \
+  --set secret.userKey="AgC/e6dqvlN5CiAAwBog3UUgg0RuGkEX1R3k28T/NatvSi/x1tLj5XjFMQU=" \
   --set storageClass.create=true \
   --set storageClass.fsName=k8s-cephfs \
   --set storageClass.clusterID=dc176f2a-a507-11f1-a340-bc241144dae3
