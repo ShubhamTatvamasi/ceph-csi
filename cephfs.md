@@ -1,6 +1,6 @@
 # CephFS
 
-Create a new `kubernetes-cephfs` pool:
+Create a new `k8s-cephfs` pool:
 ```bash
 ceph fs volume create k8s-cephfs
 ```
