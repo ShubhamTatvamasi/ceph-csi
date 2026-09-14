@@ -1,4 +1,4 @@
-# ceph
+# Ceph CSI RBD
 
 Get Ceph cluster ID:
 ```bash
